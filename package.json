@@ -5,8 +5,7 @@
     "dev": "webpack-dev-server --port 3000 --inline --progress --colors",
     "server": "node ./server.js",
     "watch": "webpack --config webpack.config.js -w --progress --colors",
-    "build": "rm -rf ./dist/* && NODE_ENV=production webpack --config webpack.config.js -p --progress --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.js"
   },
   "author": "717995589@qq.com",
   "license": "ISC",
@@ -27,6 +26,7 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.14.1",
     "url-loader": "^0.5.7",
+    "ora": "^1.1.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   },
