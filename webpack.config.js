@@ -128,8 +128,8 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
-        // drop_debugger: true,
-        // drop_console: true
+        drop_debugger: isProduction ? true :false,
+        drop_console: isProduction ? true :false
       }
     }),
     //定义环境变量
